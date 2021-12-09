@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="197.0" prefWidth="316.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="17.0" layoutY="18.0" prefHeight="163.0" prefWidth="279.0" style="-fx-background-color: #000000;" styleClass="card" stylesheets="@style.css">
+         <children>
+            <RadioButton layoutX="86.0" layoutY="14.0" mnemonicParsing="false" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="48.0" prefHeight="17.0" prefWidth="118.0" text="Company Name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="73.0" prefHeight="17.0" prefWidth="112.0" text="2013 - 2020" textAlignment="CENTER" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="80.0" layoutY="101.0" text="User:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="12.0" layoutY="120.0" prefHeight="17.0" prefWidth="165.0" text="Collin Powell" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

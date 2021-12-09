@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1315.0" style="  -fx-background-color: #fff;" styleClass="parent1" stylesheets="@../Fruit/values/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.tableView.TableViewController">
+    <stylesheets>
+        <URL value="@tableview.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="studentsTable" layoutX="60.0" layoutY="225.0" prefHeight="386.0" prefWidth="1196.0">
+            <columns>
+                <TableColumn fx:id="manage" maxWidth="266.0" prefWidth="102.0" style="-fx-alignment: center;" text="Manage" />
+                <TableColumn fx:id="wellName" maxWidth="352.0" prefWidth="83.0" style="-fx-alignment: center;" text="Well Name" />
+                <TableColumn fx:id="qo" maxWidth="238.0" minWidth="9.0" prefWidth="90.0" style="-fx-alignment: center;" text="Initial Rate (BOPD)" />
+                <TableColumn fx:id="qf" maxWidth="325.0" minWidth="0.0" prefWidth="171.0" style="-fx-alignment: center;" text="Economic Limit (BOPD)" />
+                <TableColumn fx:id="npd" maxWidth="334.0" minWidth="0.0" prefWidth="169.0" style="-fx-alignment: center;" text="Reserves To Be Produced" />
+                <TableColumn fx:id="tf" maxWidth="288.0" prefWidth="163.0" style="-fx-alignment: center;" text="Total Time (Tf)" />
+                <TableColumn fx:id="a" maxWidth="292.0" prefWidth="87.0" style="-fx-alignment: center;" text="A" />
+                <TableColumn fx:id="b" maxWidth="266.0" prefWidth="68.0" style="-fx-alignment: center;" text="B" />
+                <TableColumn fx:id="mode" maxWidth="397.0" minWidth="0.0" prefWidth="153.0" style="-fx-alignment: center;" text="Mode" />
+                <TableColumn fx:id="wellType" maxWidth="266.0" prefWidth="92.0" style="-fx-alignment: center;" text="Well Type" />
+                </columns>
+        </TableView>
+        <Pane layoutY="113.0" prefHeight="3.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <Label fx:id="fieldNameText" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="59.0" prefHeight="46.0" prefWidth="1303.0" text="Field Name" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="FontAwesome Regular" size="31.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" layoutX="602.0" layoutY="-1.0" prefHeight="36.0" prefWidth="37.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <FontAwesomeIcon fill="WHITE" iconName="CLOSE" onMouseClicked="#close" size="20" styleClass="btn" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="123.0" prefHeight="76.0" prefWidth="200.0">
+            <children>
+                <FontAwesomeIcon fill="#b5f87b" iconName="PLUS" onMouseClicked="#getAddView" size="45" styleClass="btn">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+                <FontAwesomeIcon fill="#08ccff" iconName="REFRESH" layoutX="10.0" layoutY="65.0" onMouseClicked="#refreshTable" size="45" styleClass="btn">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+                <FontAwesomeIcon fill="WHITE" iconName="DATABASE" layoutX="62.0" layoutY="65.0" onMouseClicked="#print" size="45" styleClass="btn" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

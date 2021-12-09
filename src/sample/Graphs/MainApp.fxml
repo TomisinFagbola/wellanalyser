@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0"
+             stylesheets="@css.css"
+            xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Graphs.MainAppController">
+    <children>
+        <AnchorPane layoutX="416.0" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="185.0">
+            <children>
+                <VBox prefHeight="398.0" prefWidth="183.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleXYButtonAction" prefHeight="66.0"
+                                prefWidth="193.0" text="y=x" fx:id="xyButton"/>
+                        <Button mnemonicParsing="false" onAction="#handleXYButton2Action" prefHeight="66.0"
+                                prefWidth="207.0" text="y=x-3" fx:id="xyButton2"/>
+                        <Button fx:id="squaredButton" mnemonicParsing="false" onAction="#handleSquaredButtonAction"
+                                prefHeight="67.0" prefWidth="220.0" text="y=x^2"/>
+                        <Button fx:id="squaredButton2" mnemonicParsing="false" onAction="#handleSquaredButton2Action"
+                                prefHeight="67.0" prefWidth="232.0" text="y=x^2+2"/>
+                        <Button fx:id="cubedButton" mnemonicParsing="false" onAction="#handleCubedButtonAction"
+                                prefHeight="67.0" prefWidth="236.0" text="y=x^3"/>
+                        <Button fx:id="cubedButton2" mnemonicParsing="false" onAction="#handleCubedButton2Action"
+                                prefHeight="67.0" prefWidth="266.0" text="y=(x-3)^3-1"/>
+                        <Button fx:id="clearButton" mnemonicParsing="false" onAction="#handleClearButtonAction"
+                                prefHeight="67.0" prefWidth="266.0" text="clear"/>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-7.0" prefHeight="400.0" prefWidth="420.0">
+            <children>
+                <LineChart fx:id="lineGraph" legendVisible="false" prefHeight="372.0" prefWidth="423.0" visible="false">
+                    <xAxis>
+                        <NumberAxis autoRanging="false" lowerBound="-10" side="BOTTOM" tickUnit="1" upperBound="10"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis autoRanging="false" lowerBound="-10" side="LEFT" tickUnit="1" upperBound="10"/>
+                    </yAxis>
+                    <cursor>
+                        <Cursor fx:constant="CROSSHAIR"/>
+                    </cursor>
+                </LineChart>
+                <AreaChart fx:id="areaGraph" legendVisible="false" prefHeight="372.0" prefWidth="423.0">
+                    <xAxis>
+                        <NumberAxis autoRanging="false" lowerBound="-10" side="BOTTOM" tickUnit="1" upperBound="10"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis autoRanging="false" lowerBound="-10" side="LEFT" tickUnit="1" upperBound="10"/>
+                    </yAxis>
+                    <cursor>
+                        <Cursor fx:constant="CROSSHAIR"/>
+                    </cursor>
+                </AreaChart>
+                <Button fx:id="lineGraphButton" onAction="#handleLineGraphButtonAction" layoutX="35.0" layoutY="366.0"
+                        mnemonicParsing="false" prefHeight="29.0" prefWidth="185.0" text="Line Graph"/>
+                <Button layoutX="224.0" onAction="#handleAreaGraphButtonAction" layoutY="366.0" mnemonicParsing="false"
+                        prefHeight="29.0" prefWidth="185.0" text="Area Graph"/>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="  -fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.tableView.DeclineModels">
+   <children>
+      <JFXTextField fx:id="qoJtf" focusColor="#4ffbca" labelFloat="true" layoutX="62.0" layoutY="120.0" prefHeight="33.0" prefWidth="220.0" promptText="Initial Rate (BOPD)" unFocusColor="BLACK" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="318.0" />
+      <JFXTextField fx:id="qfJtf" focusColor="#4ffbca" labelFloat="true" layoutX="331.0" layoutY="120.0" prefHeight="33.0" prefWidth="220.0" promptText="Economic Limit (BOPD)" unFocusColor="BLACK" />
+      <JFXTextField fx:id="npdJtf" focusColor="#4ffbca" labelFloat="true" layoutX="62.0" layoutY="173.0" prefHeight="33.0" prefWidth="220.0" promptText="Reserves To Be Produced" unFocusColor="BLACK" />
+      <Button fx:id="analyseBtn" layoutX="178.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="33.0" prefWidth="249.0" text="Run Analysis On Data" />
+      <JFXTextField fx:id="bJtf" focusColor="#4ffbca" labelFloat="true" layoutX="331.0" layoutY="235.0" prefHeight="33.0" prefWidth="220.0" promptText="b (For Hyperbolic)" unFocusColor="BLACK" />
+      <Label fx:id="mode" alignment="CENTER" contentDisplay="CENTER" layoutX="143.0" layoutY="13.0" prefHeight="27.0" prefWidth="318.0" text="Exponential Decline" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="aJtf" focusColor="#4ffbca" labelFloat="true" layoutX="331.0" layoutY="173.0" prefHeight="33.0" prefWidth="220.0" promptText="a" unFocusColor="BLACK" />
+      <JFXTextField fx:id="tfJtf" focusColor="#4ffbca" labelFloat="true" layoutX="62.0" layoutY="235.0" prefHeight="33.0" prefWidth="220.0" promptText="Total Time (Tf)" unFocusColor="BLACK" />
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="351.0" prefHeight="185.0" prefWidth="311.0" text="Results Display Here" textAlignment="CENTER" />
+      <ChoiceBox fx:id="declineType" layoutX="81.0" layoutY="52.0" prefHeight="33.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="wellType" layoutX="331.0" layoutY="52.0" prefHeight="33.0" prefWidth="150.0" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="31.0" prefHeight="32.0" prefWidth="111.0" text="Select Company" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listview" layoutX="14.0" layoutY="77.0" prefHeight="289.0" prefWidth="568.0" />
+      <Button fx:id="addNew" layoutX="455.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Add New Company" />
+   </children>
+</AnchorPane>

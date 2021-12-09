@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DashBoard.Controller">
+      <children>
+         <TextField fx:id="production" layoutX="296.0" layoutY="74.0" prefHeight="27.0" prefWidth="183.0" promptText="Production" style="-fx-background-color: #ffffff; -fx-border-color: #B7C3D7;" />
+         <Label fx:id="title" layoutX="57.0" layoutY="25.0" text="Table Data (Ugbomorh Field)" textFill="#e7e5e5">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <HBox alignment="CENTER_LEFT" layoutX="47.0" layoutY="111.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
+            <children>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label fx:id="start" text="1958" textFill="#2a73ff">
+                        <font>
+                           <Font name="System Bold" size="26.0" />
+                        </font>
+                     </Label>
+                     <Label text="Start Year" textFill="#e7e5e5" />
+                  </children>
+               </VBox>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label fx:id="current" text="2021" textFill="#26bfbc">
+                        <font>
+                           <Font name="System Bold" size="26.0" />
+                        </font>
+                     </Label>
+                     <Label text="Current Year" textFill="#e7e5e5" />
+                  </children>
+               </VBox>
+            <Button fx:id="plot" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="55.0" prefWidth="178.0" text="Plot Graph" textAlignment="CENTER" wrapText="true" />
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="203.0" prefHeight="55.0" prefWidth="685.0" spacing="80.0" style="-fx-background-color: #02030A;">
+            <children>
+               <Label alignment="CENTER" prefHeight="17.0" prefWidth="144.0" text="Years" textFill="#e7e5e5">
+                  <HBox.margin>
+                     <Insets left="50.0" />
+                  </HBox.margin>
+               </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+               <Label alignment="CENTER" prefHeight="42.0" prefWidth="203.0" text="Production Quantity (Barrels)" textAlignment="CENTER" textFill="#e7e5e5" wrapText="true">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+            <Separator layoutX="241.0" layoutY="10.0" orientation="VERTICAL" prefHeight="63.0" prefWidth="5.0" />
+            <Label alignment="CENTER" layoutX="327.0" layoutY="23.0" prefHeight="35.0" prefWidth="179.0" text="Cumulative Production" textAlignment="CENTER" textFill="#e7e5e5" wrapText="true" />
+            <Separator layoutX="480.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0" />
+            </children>
+         </HBox>
+         <ScrollPane hbarPolicy="NEVER" layoutX="76.0" layoutY="273.0" prefHeight="279.0" prefWidth="677.0" stylesheets="@style.css">
+            <content>
+               <VBox fx:id="pnItems" prefHeight="312.0" prefWidth="751.0" spacing="5.0" style="-fx-background-color: #02030A;">
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding>
+               </VBox>
+            </content>
+         </ScrollPane>
+      <Button fx:id="add" layoutX="490.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="25.0" prefWidth="52.0" text="ADD" />
+         <SplitMenuButton fx:id="startYear" layoutX="62.0" layoutY="74.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="217.0" style="-fx-background-color: white;" text="Select Year" textFill="#394d01">
+
+         </SplitMenuButton>
+      <Button fx:id="edit" layoutX="554.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleSignIn" prefHeight="25.0" prefWidth="52.0" text="EDIT" />
+
+      </children>
+   </Pane>

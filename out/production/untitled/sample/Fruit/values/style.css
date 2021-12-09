@@ -1,0 +1,55 @@
+
+.parent1{
+    -fx-background-image: url("../img/pet_field.png");
+    -fx-background-size: cover;
+}
+
+.parent2{
+    -fx-background-image: url("../img/pet.jpg");
+    -fx-background-size: cover;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.scroll-pane {
+       -fx-background-color: #00000000;
+}
+
+.right-bar{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosen-fruit-card{
+    -fx-background-color: #F16C31;
+    -fx-background-radius: 15;
+}
+
+.comboBox{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 25;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.free-delivery-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 10;
+}
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 10;
+}
+
+.fruit-item{
+    -fx-background-color: #FFFFFF;
+        -fx-background-radius: 10;
+}

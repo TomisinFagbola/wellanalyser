@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewFieldForm.InitFormController">
+	<children>
+		<AnchorPane layoutX="-7.0" layoutY="5.0" prefHeight="600.0" prefWidth="706.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="47.0">
+			<children>
+				<AnchorPane layoutX="327.0" layoutY="8.0" maxWidth="326.0" prefHeight="484.0" prefWidth="326.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="327.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="8.0">
+					<children>
+						<Label layoutX="53.0" layoutY="23.0" prefHeight="27.0" prefWidth="223.0" text="Fill In Field Details" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="23.0">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Label>
+						<JFXTextField fx:id="inpName" focusColor="#77702e" labelFloat="true" layoutX="56.0" layoutY="77.0" prefHeight="33.0" prefWidth="217.0" promptText="Field Name" unFocusColor="BLACK" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="19.0" />
+						<JFXButton fx:id="btnSignIn" buttonType="RAISED" layoutX="56.0" layoutY="336.0" onAction="#handleSignIn" prefHeight="40.0" prefWidth="217.0" ripplerFill="WHITE" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf10, #fff414); -fx-background-radius: 1em;" text="Continue" textFill="WHITE" />
+					</children>
+               <effect>
+                  <DropShadow />
+               </effect>
+				</AnchorPane>
+				<AnchorPane layoutY="-2.0" prefHeight="506.0" prefWidth="340.0" style="-fx-background-color: linear-gradient(to right top, #d9c302, #262201, #473b11, #023b04, #fff414); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-2.0">
+					<children>
+						<VBox alignment="CENTER_LEFT" layoutX="76.0" layoutY="84.0" prefHeight="475.0" prefWidth="251.0" style="-fx-background-radius: 1em;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+							<children>
+								<ImageView fitHeight="96.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../images/fupre_logo.jpg" />
+									</image>
+									<VBox.margin>
+										<Insets bottom="10.0" top="50.0" />
+									</VBox.margin>
+								</ImageView>
+								<Label text="FUPRE" textFill="WHITE">
+									<font>
+										<Font size="16.0" />
+									</font>
+								</Label>
+								<Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="82.0" prefWidth="172.0" text="Petroleum Department" textFill="WHITE" wrapText="true">
+									<font>
+										<Font size="28.0" />
+									</font>
+								</Label>
+								<Label prefHeight="54.0" prefWidth="197.0" text="Software Development For Oil Property Evaluation" textFill="WHITE" wrapText="true">
+									<font>
+										<Font size="16.0" />
+									</font>
+								</Label>
+							</children>
+						</VBox>
+					</children>
+               <effect>
+                  <DropShadow />
+               </effect>
+				</AnchorPane>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

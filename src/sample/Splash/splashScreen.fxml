@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="684.0" style="-fx-background-color: #000000;" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Splash.SplashController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="402.0" prefWidth="684.0" styleClass="parent1">
+         <children>
+            <Line endX="420.5" endY="155.5" layoutX="205.0" layoutY="182.0" startX="-184.5" startY="155.5" stroke="WHITE" />
+            <Line endX="-71.5" endY="-33.5" layoutX="152.0" layoutY="61.0" startX="-71.5" startY="322.0" stroke="WHITE" />
+            <Label contentDisplay="RIGHT" layoutX="170.0" layoutY="51.0" prefHeight="90.0" prefWidth="384.0" text="Software Development For Oil Property Evaluation" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="156.0" prefHeight="30.0" prefWidth="138.0" text="Version 1.1" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="progress" layoutX="515.0" layoutY="280.0" prefHeight="47.0" prefWidth="125.0" text="Loading..." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="342.0" layoutY="364.0" prefHeight="30.0" prefWidth="332.0" text="\@2020 FUPRE Petroleum Project" textFill="WHITE" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>

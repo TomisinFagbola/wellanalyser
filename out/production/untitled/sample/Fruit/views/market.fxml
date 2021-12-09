@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
+            prefWidth="1315.0" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Fruit.Controller.MarketController">
+    <children>
+        <BorderPane layoutX="6.0" prefHeight="200.0" prefWidth="200.0" styleClass="parent1"
+                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+            <left>
+                <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="83.0" prefWidth="387.0">
+                            <children>
+                                <Label prefHeight="49.0" prefWidth="210.0" text="Dashboard" textFill="WHITE">
+                                    <font>
+                                        <Font name="Cambria" size="40.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS"/>
+                        <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="541.0" prefWidth="335.0"
+                              stylesheets="@../values/style.css">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0"/>
+                            </VBox.margin>
+                            <children>
+                                <HBox prefHeight="89.0" prefWidth="315.0">
+                                    <children>
+                                        <Label fx:id="fruitNameLable" alignment="TOP_CENTER" prefHeight="48.0"
+                                               prefWidth="315.0" text="Peach" textAlignment="CENTER" textFill="WHITE"
+                                               wrapText="true">
+                                            <font>
+                                                <Font name="FontAwesome Regular" size="24.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="20.0" top="30.0"/>
+                                    </VBox.margin>
+                                </HBox>
+                                <ImageView fx:id="fruitImg" fitHeight="140.0" fitWidth="255.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/oil_rigs.jpg"/>
+                                    </image>
+                                    <VBox.margin>
+                                        <Insets top="20.0"/>
+                                    </VBox.margin>
+                                </ImageView>
+                                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                                    <VBox.margin>
+                                        <Insets top="20.0"/>
+                                    </VBox.margin>
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                            <children>
+                                                <Separator prefHeight="0.0" prefWidth="118.0"/>
+                                                <Separator prefHeight="0.0" prefWidth="118.0"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="135.0" prefWidth="335.0">
+                                    <children>
+                                        <Label fx:id="fieldsLabel" alignment="TOP_CENTER" prefHeight="108.0"
+                                               prefWidth="321.0" text="Fields" textAlignment="CENTER" textFill="WHITE"
+                                               wrapText="true">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="18.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <Button fx:id="viewDetails" mnemonicParsing="false" prefHeight="44.0" prefWidth="270.0"
+                                        styleClass="add-btn" stylesheets="@../values/style.css" text="VIEW DETAILS"
+                                        textFill="#828282">
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" top="30.0"/>
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="System Bold" size="15.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                            <styleClass>
+                                <String fx:value="chosen-fruit-card"/>
+                                <String fx:value="shadow"/>
+                            </styleClass>
+                        </VBox>
+                        <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS"/>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                            <JFXButton fx:id="createNewCompany" buttonType="RAISED" maxHeight="-Infinity"
+                                       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0"
+                                       prefWidth="200.0" ripplerFill="WHITE"
+                                       style="-fx-background-color: #00A2D3; -fx-background-radius: 0px;"
+                                       text="Create New Company" textFill="WHITE">
+                                <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                </VBox.margin>
+                                <font>
+                                    <Font name="Calibri Light" size="14.0"/>
+                                </font>
+                                <graphic>
+                                    <FontAwesomeIcon glyphStyle="-fx-fill:#fff" iconName="PLUS_CIRCLE" size="1.5em"/>
+                                </graphic>
+                                <cursor>
+                                    <Cursor fx:constant="HAND"/>
+                                </cursor>
+                                <HBox.margin>
+                                    <Insets top="40.0"/>
+                                </HBox.margin>
+                            </JFXButton>
+                        </HBox>
+                        <HBox prefHeight="3.0" prefWidth="840.0">
+                            <children>
+                                <Pane prefHeight="84.0" prefWidth="96.0"/>
+                                <Pane prefHeight="84.0" prefWidth="96.0"/>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="transparent"
+                              VBox.vgrow="ALWAYS">
+                            <children>
+                                <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="780.0" styleClass="scroll-pane"
+                                            stylesheets="@../values/style.css">
+                                    <content>
+                                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0"
+                                                  styleClass="scroll-pane">
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                                            </rowConstraints>
+                                        </GridPane>
+                                    </content>
+                                    <HBox.margin>
+                                        <Insets top="10.0"/>
+                                    </HBox.margin>
+                                </ScrollPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

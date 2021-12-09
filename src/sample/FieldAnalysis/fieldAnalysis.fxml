@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="parent1" stylesheets="@../Fruit/values/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FieldAnalysis.FieldAnalysis">
+    <stylesheets>
+        <URL value="@../tableView/tableview.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="studentsTable" layoutX="32.0" layoutY="205.0" prefHeight="386.0" prefWidth="1196.0">
+            <columns>
+                <TableColumn fx:id="year" maxWidth="266.0" prefWidth="50.0" style="-fx-alignment: center;" text="Year" />
+                <TableColumn fx:id="production" maxWidth="352.0" prefWidth="106.0" style="-fx-alignment: center;" text="Production" />
+                <TableColumn fx:id="revenue" maxWidth="238.0" minWidth="9.0" prefWidth="124.0" style="-fx-alignment: center;" text="Revenue" />
+                <TableColumn fx:id="tax" maxWidth="263.0" minWidth="0.0" prefWidth="124.0" style="-fx-alignment: center;" text="Tax" />
+                <TableColumn fx:id="royalty" maxWidth="287.0" minWidth="0.0" prefWidth="124.0" style="-fx-alignment: center;" text="Royalty" />
+                <TableColumn fx:id="operatingCost" maxWidth="305.0" prefWidth="139.0" style="-fx-alignment: center;" text="Operating Cost" />
+                <TableColumn fx:id="bankRate" maxWidth="312.0" prefWidth="125.0" style="-fx-alignment: center;" text="Bank Rate" />
+                <TableColumn fx:id="wellCost" maxWidth="278.0" prefWidth="129.0" style="-fx-alignment: center;" text="Well Cost" />
+                <TableColumn fx:id="NCF" maxWidth="352.0" prefWidth="136.0" style="-fx-alignment: center;" text="NCF" />
+                <TableColumn fx:id="NPD" maxWidth="266.0" prefWidth="120.0" style="-fx-alignment: center;" text="NPV" />
+            </columns>
+        </TableView>
+        <Pane layoutY="113.0" prefHeight="3.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <Label fx:id="fieldNameText" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="59.0" prefHeight="46.0" prefWidth="1303.0" text="Economic Analysis" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="FontAwesome Regular" size="31.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" layoutX="602.0" layoutY="-1.0" prefHeight="36.0" prefWidth="37.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <FontAwesomeIcon fill="WHITE" iconName="CLOSE" onMouseClicked="#close" size="20" styleClass="btn" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="123.0" prefHeight="76.0" prefWidth="200.0">
+            <children>
+                <FontAwesomeIcon fill="#08ccff" iconName="REFRESH" layoutX="10.0" layoutY="65.0" onMouseClicked="#refreshTable" size="45" styleClass="btn">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+                <FontAwesomeIcon fill="WHITE" iconName="ADJUST" layoutX="62.0" layoutY="65.0" onMouseClicked="#print" size="45" styleClass="btn" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
